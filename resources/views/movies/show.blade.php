@@ -14,7 +14,7 @@
                     <span class="ml-1">{{ $movie['vote_average'] * 10}}%</span>
                     <span class="mx-2">|</span>
                     <span class="">{{ \Carbon\Carbon::parse($movie['release_date'])->format('M d, Y') }}</span>
-                    <span class="mx-2">|</span>
+                    <span class="mx-2">|||</span>
                     <span class="">
                         @foreach ($movie['genres'] as $genre)
                             {{ $genre['name'] }}@if(!$loop->last), @endif
